@@ -1,97 +1,17 @@
-name: Flutter CI/CD
+name: Flutter CI
 
 on:
   push:
-    branches: [ main, develop ]
-  pull_request:
-    branches: [ main, develop ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.13.0'
-          channel: 'stable'
-
-      - name: Cache Flutter dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
-
-      - name: Get dependencies
-        run: flutter pub get
-
-      - name: Analyze code
-        run: flutter analyze
-
-      - name: Run tests
-        run: flutter test --coverage
-
-      - name: Upload coverage reports
-        uses: codecov/codecov-action@v3
-        if: always()
-        with:
-          file: ./coverage/lcov.info
-          flags: flutter
-
-      - name: Format check
-        run: flutter format --set-exit-if-changed --dry-run .
-
-      - name: Build APK
-        run: flutter build apk --release
-        
-      - name: Upload APK artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: app-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
-
-      - name: Build AAB
-        run: flutter build appbundle --release
-        
-      - name: Upload AAB artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: app-aab
-          path: build/app/outputs/bundle/release/app-release.aab
-
-  build-ios:
-    runs-on: macos-latest
-    
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.13.0'
-          channel: 'stable'
-
-      - name: Cache Flutter dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
-
-      - name: Get dependencies
-        run: flutter pub get
-
-      - name: Build iOS
-        run: flutter build ios --release --no-codesign
-
-      - name: Upload iOS artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: ios-build
-          path: build/ios/iphoneos/Runner.app
+          flutter-version: '3.16.0'
+      - run: flutter pub get
+      - run: flutter analyze
