@@ -1,0 +1,113 @@
+name: quran_app
+description: A modern, ad-free, AI-enhanced Quran application with clean architecture, offline support, and Firebase backend.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.13.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  hooks_riverpod: ^2.4.0
+  flutter_hooks: ^4.1.0
+
+  # Networking & HTTP
+  dio: ^5.3.0
+  retrofit: ^4.1.0
+
+  # Local Database
+  isar: ^3.1.0
+  isar_flutter_libs: ^3.1.0
+
+  # Firebase
+  firebase_core: ^2.24.0
+  cloud_firestore: ^4.13.0
+  firebase_auth: ^4.15.0
+  firebase_storage: ^11.6.0
+  firebase_messaging: ^14.7.0
+  cloud_functions: ^4.5.0
+
+  # Navigation
+  go_router: ^12.2.0
+
+  # Audio Playback
+  just_audio: ^0.9.36
+  just_audio_background: ^0.9.13
+
+  # Local Storage (Key-Value)
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+
+  # JSON Serialization
+  json_serializable: ^6.7.0
+  json_annotation: ^4.8.1
+
+  # Dependency Injection
+  get_it: ^7.6.0
+
+  # Utility Libraries
+  intl: ^0.19.0
+  uuid: ^4.0.0
+  connectivity_plus: ^5.0.0
+  permission_handler: ^11.4.4
+  device_info_plus: ^9.1.1
+
+  # UI & Theme
+  flutter_screenutil: ^5.9.0
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  lottie: ^2.5.0
+
+  # Logging & Error Tracking
+  logger: ^2.0.2
+  sentry_flutter: ^7.13.0
+
+  # Stripe Payment Integration
+  flutter_stripe: ^10.1.0
+
+  # Local Authentication
+  local_auth: ^2.1.0
+
+  # Localization
+  easy_localization: ^3.0.2
+
+  # API Client Code Generation
+  build_runner: ^2.4.6
+  retrofit_generator: ^7.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  isar_generator: ^3.1.0
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - assets/quran_data/
+    - assets/lottie/
+    - i18n/
+
+  # Fonts
+  fonts:
+    - family: QuranFont
+      fonts:
+        - asset: assets/fonts/QuranFont.ttf
+    - family: Janna
+      fonts:
+        - asset: assets/fonts/Janna-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Janna-Bold.ttf
+          weight: 700
