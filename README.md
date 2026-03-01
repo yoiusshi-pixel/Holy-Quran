@@ -26,6 +26,31 @@ This app provides a premium digital Mushaf experience with clean architecture, o
 
 ---
 
+## 📖 Quran Text Attribution
+
+This application uses authentic Quranic text and is committed to accuracy and proper attribution:
+
+### Text Source
+- **Quran Text**: [Tanzil Quran Text Project](https://tanzil.net/)
+- **Verification**: Authenticated via multiple Islamic scholarly sources
+- **Version**: Standardized Arabic text following traditional Uthmani Hafs recitation
+
+### Font & Display
+- **Script**: Uthmani Hafs Script
+- **Font File**: Traditional Islamic typography optimized for readability
+- **Layout**: Page-by-page Mushaf display matching physical Quran edition
+
+### Attribution & Licensing
+Users accessing Quran text within this application are bound by the following:
+- Quran text provided for personal, non-commercial use
+- Proper citation and attribution must be maintained
+- Modifications to Quranic text are strictly prohibited
+- All rights to Quranic text remain with original sources and Islamic scholars
+
+**Important**: This application respects Islamic scholarship standards. No Quranic verses may be altered, modified, or presented out of context.
+
+---
+
 ## 🏗 Architecture
 
 This project follows a **Clean Architecture + Feature-based structure**.
