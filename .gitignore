@@ -1,0 +1,217 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+pubspec.lock
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/app/outputs/
+/android/.gradle/
+/android/gradle.properties
+/android/local.properties
+/android/key.properties
+
+# iOS/macOS
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vscode/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Icon?.*
+**/ios/**/Info.plist
+**/ios/**/Podfile
+**/ios/**/Podfile.lock
+**/ios/**/Pods/
+**/ios/**/profile
+**/ios/**/xcuserdata/
+**/ios/Runner/GoogleService-Info.plist
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.xcframework
+**/ios/Flutter/Local\ Podspecs/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Pods/
+**/ios/Podfile.lock
+
+# Web
+lib/generated_plugin_registrant.dart
+
+# Exceptions to above rules.
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# Generated Files
+*.g.dart
+*.freezed.dart
+*.config.dart
+
+# Build directories
+build/
+.dart_tool/
+android/.gradle/
+android/local.properties
+
+# Generated files from build_runner
+lib/**/*.g.dart
+lib/**/*.freezed.dart
+lib/**/*.config.dart
+
+# Firebase & Secrets
+google-services.json
+GoogleService-Info.plist
+ServiceAccountKey.json
+.env
+.env.local
+.env.*.local
+secrets.json
+firebase-key.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-specific
+**/._*
+.DS_Store
+Thumbs.db
+*.lock
+
+# Dependencies
+pubspec.lock
+.packages
+
+# Code coverage
+coverage/
+.coverage
+
+# Generated files
+amplify/
+lib/env.dart
+
+# Local development
+.fvm/fvm_config.json
+
+# Temporary files
+*.tmp
+*.temp
+*.backup
+*.bak
+
+# Platform executables
+windows/flutter/generated_plugins.cmake
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.app
+*.app/
+
+# Linux
+.fuse_hidden*
+*.swp
+*.swo
+*~
+
+# Windows
+Thumbs.db
+*.exe
+
+# Node (if using Firebase/Cloud Functions)
+functions/node_modules/
+functions/.env
+functions/.env.local
+
+# iOS Pods
+ios/Pods/
+ios/Podfile.lock
+
+# Tests
+test/.test_coverage.dart
+.test_coverage.dart
+coverage/
+
+# Generated Isar files
+lib/generated/
+
+# Hive box files
+*.isar
+*.isar.isarpack
+
+# Build files
+*.app
+*.apk
+*.aab
+*.ipa
+
+# Environment files
+.env
+.env.production
+.env.development
+.env.staging
+
+# Keystore files
+*.jks
+*.keystore
+android/app/debug.keystore
+
+# Dynamic library compilation files
+windows/flutter/ephemeral/
+
+# Ignore Podfile.lock from version control
+ios/Podfile.lock
+
+# Ignore generated plugin files
+android/app/release/app-release.apk
+android/app/release/app-release.aab/
+
+# Ignore local properties
+local.properties
