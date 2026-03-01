@@ -1,3 +1,7 @@
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue)
+![Firebase](https://img.shields.io/badge/Firebase-Enabled-orange)
+![License](https://img.shields.io/badge/License-Proprietary-red)
+
 # 🕌 Quran App — Beautiful Digital Mushaf
 
 A modern, ad-free, AI-enhanced Quran application built with Flutter.
