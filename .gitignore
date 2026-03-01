@@ -1,26 +1,32 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
+# Flutter
+.build/
+.dart_tool/
+.packages
+.pub/
+pubspec.lock
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
+# Android
+android/.gradle/
+android/app/build/
+
+# iOS
+ios/Pods/
+ios/Runner.xcworkspace/
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# IDE
 .idea/
+.vscode/
+*.iml
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# macOS
+.DS_Store
 
+# Logs
+*.log
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
